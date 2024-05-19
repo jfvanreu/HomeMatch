@@ -13,19 +13,23 @@ HomeMatch leverages GenAI models to perform the following tasks:
 * Summarize the user preferences.
 * Personalize of the listings based on the user preferences.
 
-## Multimodal Search
+## Text-based and Multi-modal Search
 
-In this project, we also explore multi-modal searches. We use Chroma vector database to encode real estate listings and images. Using the multi-modal search, we can then search the best match properties using a textual or image search.
+In this project, we first use a text-based search to identify the best properties for the user. Then, we also explore multi-modal searches. We use Chroma vector database to encode real estate listings and images. Using the multi-modal search, we can then search the best match properties using a textual or image search.
 
 ## Chatbot experience
 
-In the first part of the project, we hard-coded some questions and answers to capture the user's preferences. However, in a real-case scenario, it's better to use a chatbot interface. So, we built a chat bot interface in this project too.
+In the first part of the project, we hard-coded some questions and answers to capture the user's preferences. However, in a real-case scenario, it's better to use a chatbot interface. So, we built a chat bot interface in this project too. This chatbot is not multimodal at this point. This could be a nice enhancement for the future.
 
 ## Project set up
 
 To run this project, clone the repo using the following command:
 
+git clone https://github.com/jfvanreu/HomeMatch.git
+
 The project relies on an environment variable to get access to the openAI environment. Update the .env file with your API key as follows:
+
+OPENAI_API_KEY='Enter your OPENAI API key here'
 
 ## Project Files
 
@@ -37,3 +41,5 @@ This project is composed of a few files and folders:
   4. An **images/generated** folder which includes 10 images generated based on the real-estate descriptions.
   5. An **images/search** folder which includes images that are used to test the multi-modal search.
   6. **requirements.txt** file includes all the packages that need to be installed to run this project.
+
+Please review the **HomeMatch.ipynb** file first.
