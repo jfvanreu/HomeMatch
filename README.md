@@ -42,4 +42,6 @@ This project is composed of a few files and folders:
   5. An **images/search** folder which includes images that are used to test the multi-modal search.
   6. **requirements.txt** file includes all the packages that need to be installed to run this project.
 
-Please review the **HomeMatch.ipynb** file first.
+Please review the **HomeMatch.ipynb** file first using the following command:
+
+jupyter notebook HomeMatch.ipynb
